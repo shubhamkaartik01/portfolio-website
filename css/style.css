@@ -358,9 +358,11 @@ h5 {
 
 .hero-title{
 
-    color:white;
+    /* color:white; */
     margin-bottom: 8px;
     font-size: 2rem;
+    display: inline-block;
+    color: var(--text-color) !important;
     
 }
 
@@ -368,6 +370,10 @@ h5 {
     animation: blink 0.8s step-end infinite;
     font-weight: 300;
     color: var(--primary-color);
+}
+/* Dark mode override */
+[data-theme="dark"] .hero-title {
+    color: #f0f0f5;
 }
 
 .hero-typed-wrapper {
