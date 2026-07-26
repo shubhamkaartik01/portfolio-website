@@ -311,8 +311,8 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: 'Modern, responsive portfolio for a developer (this very site).',
             tech: ['HTML', 'CSS', 'JavaScript'],
             category: 'responsive',
-            live: '#',
-            github: '#'
+            live: 'https://shubhamkaartik-portfoliowebsite.netlify.app/',
+            github: 'https://github.com/shubhamkaartik01/portfolio-website'
         },
         {
             src: "/assert/project-03-task.png",
@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const certificatesData = [
         { title: 'Java', provider: 'Great Learning', src: '/certificate/Java_Certificate.jpg', icon: 'fa-brands fa-java' },
         { title: 'Java DSA', provider: 'Great Learning', src: '/certificate/Java_DSA_Certificate.jpg', icon: 'fa-brands fa-java' },
-        { title: 'Responsive Web Design', provider: 'freeCodeCamp', src: '', icon: 'fa-duotone fa-globe-www' },
+        // { title: 'Responsive Web Design', provider: 'freeCodeCamp', src: '', icon: 'fas fa-certificate' },
         { title: 'Frontend Development', provider: 'Udemy', src: '', icon: 'fas fa-certificate' },
         { title: 'Git & GitHub', provider: 'LinkedIn Learning', src: '', icon: 'fas fa-certificate' }
     ];
@@ -570,10 +570,10 @@ form.addEventListener('submit', function(e) {
     fetch(form.action, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',   // ✅ fixed spelling
+            'Content-Type': 'application/json',  
             'Accept': 'application/json'
         },
-        body: JSON.stringify(data)                // ✅ use 'data', not 'formData'
+        body: JSON.stringify(data)           
     })
     .then(response => {
         if (response.ok) {
